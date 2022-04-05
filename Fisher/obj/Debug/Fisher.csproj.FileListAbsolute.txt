@@ -1,0 +1,11 @@
+D:\University\2 year\УИРС\Fisher\Fisher\bin\Debug\Fisher.exe.config
+D:\University\2 year\УИРС\Fisher\Fisher\bin\Debug\Fisher.exe
+D:\University\2 year\УИРС\Fisher\Fisher\bin\Debug\Fisher.pdb
+D:\University\2 year\УИРС\Fisher\Fisher\obj\Debug\Fisher.csproj.AssemblyReference.cache
+D:\University\2 year\УИРС\Fisher\Fisher\obj\Debug\Fisher.csproj.SuggestedBindingRedirects.cache
+D:\University\2 year\УИРС\Fisher\Fisher\obj\Debug\Fisher.Form1.resources
+D:\University\2 year\УИРС\Fisher\Fisher\obj\Debug\Fisher.Properties.Resources.resources
+D:\University\2 year\УИРС\Fisher\Fisher\obj\Debug\Fisher.csproj.GenerateResource.cache
+D:\University\2 year\УИРС\Fisher\Fisher\obj\Debug\Fisher.csproj.CoreCompileInputs.cache
+D:\University\2 year\УИРС\Fisher\Fisher\obj\Debug\Fisher.exe
+D:\University\2 year\УИРС\Fisher\Fisher\obj\Debug\Fisher.pdb
