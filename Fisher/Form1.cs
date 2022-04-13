@@ -13,6 +13,7 @@ namespace Fisher
     public partial class Form1 : Form
     {
         Fishing f = new Fishing(500, 1000);
+        Random rn = new Random();
 
         public Form1()
         {
@@ -31,6 +32,16 @@ namespace Fisher
                 chart_Capital.Series[0].Points.Add(f.Capital);
                 chart_Fleet.Series[0].Points.Add(f.Fleet);
                 chart_PersonalGain.Series[0].Points.Add(f.PersonalGain);
+
+                if (checkBox_ChangePrice.Checked && rn.Next(10) < 5)
+                {
+                    int price = int.Parse(textBox_MarketPrice.Text);
+                    int d = rn.Next(-1, 2);
+                    if (price + d > 0 && price + d < 40)
+                    {
+                        textBox_MarketPrice.Text = (price + d).ToString();
+                    }
+                }
             }
         }
 

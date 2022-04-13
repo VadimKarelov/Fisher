@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label_Capital = new System.Windows.Forms.Label();
             this.checkBox_Controller = new System.Windows.Forms.CheckBox();
             this.textBox_CrewSize = new System.Windows.Forms.TextBox();
@@ -74,6 +74,7 @@
             this.chart_Fleet = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label4 = new System.Windows.Forms.Label();
             this.chart_PersonalGain = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.checkBox_ChangePrice = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Fish)).BeginInit();
@@ -405,30 +406,30 @@
             // 
             // chart_Fish
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart_Fish.ChartAreas.Add(chartArea1);
+            chartArea5.Name = "ChartArea1";
+            this.chart_Fish.ChartAreas.Add(chartArea5);
             this.chart_Fish.Location = new System.Drawing.Point(713, 34);
             this.chart_Fish.Name = "chart_Fish";
-            series1.BorderWidth = 3;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Name = "Fish";
-            this.chart_Fish.Series.Add(series1);
+            series5.BorderWidth = 3;
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Name = "Fish";
+            this.chart_Fish.Series.Add(series5);
             this.chart_Fish.Size = new System.Drawing.Size(440, 117);
             this.chart_Fish.TabIndex = 12;
             // 
             // chart_Capital
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart_Capital.ChartAreas.Add(chartArea2);
+            chartArea6.Name = "ChartArea1";
+            this.chart_Capital.ChartAreas.Add(chartArea6);
             this.chart_Capital.Location = new System.Drawing.Point(713, 183);
             this.chart_Capital.Name = "chart_Capital";
-            series2.BorderWidth = 2;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Name = "Капитал";
-            series2.YValuesPerPoint = 2;
-            this.chart_Capital.Series.Add(series2);
+            series6.BorderWidth = 2;
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Name = "Капитал";
+            series6.YValuesPerPoint = 2;
+            this.chart_Capital.Series.Add(series6);
             this.chart_Capital.Size = new System.Drawing.Size(440, 117);
             this.chart_Capital.TabIndex = 12;
             // 
@@ -464,16 +465,16 @@
             // 
             // chart_Fleet
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart_Fleet.ChartAreas.Add(chartArea3);
+            chartArea7.Name = "ChartArea1";
+            this.chart_Fleet.ChartAreas.Add(chartArea7);
             this.chart_Fleet.Location = new System.Drawing.Point(713, 339);
             this.chart_Fleet.Name = "chart_Fleet";
-            series3.BorderWidth = 2;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Name = "Капитал";
-            series3.YValuesPerPoint = 2;
-            this.chart_Fleet.Series.Add(series3);
+            series7.BorderWidth = 2;
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series7.Name = "Капитал";
+            series7.YValuesPerPoint = 2;
+            this.chart_Fleet.Series.Add(series7);
             this.chart_Fleet.Size = new System.Drawing.Size(440, 117);
             this.chart_Fleet.TabIndex = 12;
             // 
@@ -489,18 +490,28 @@
             // 
             // chart_PersonalGain
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart_PersonalGain.ChartAreas.Add(chartArea4);
+            chartArea8.Name = "ChartArea1";
+            this.chart_PersonalGain.ChartAreas.Add(chartArea8);
             this.chart_PersonalGain.Location = new System.Drawing.Point(713, 490);
             this.chart_PersonalGain.Name = "chart_PersonalGain";
-            series4.BorderWidth = 2;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Name = "Капитал";
-            series4.YValuesPerPoint = 2;
-            this.chart_PersonalGain.Series.Add(series4);
+            series8.BorderWidth = 2;
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.Name = "Капитал";
+            series8.YValuesPerPoint = 2;
+            this.chart_PersonalGain.Series.Add(series8);
             this.chart_PersonalGain.Size = new System.Drawing.Size(440, 117);
             this.chart_PersonalGain.TabIndex = 12;
+            // 
+            // checkBox_ChangePrice
+            // 
+            this.checkBox_ChangePrice.AutoSize = true;
+            this.checkBox_ChangePrice.Location = new System.Drawing.Point(19, 459);
+            this.checkBox_ChangePrice.Name = "checkBox_ChangePrice";
+            this.checkBox_ChangePrice.Size = new System.Drawing.Size(281, 28);
+            this.checkBox_ChangePrice.TabIndex = 13;
+            this.checkBox_ChangePrice.Text = "Случайное изменение цены";
+            this.checkBox_ChangePrice.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -508,6 +519,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1163, 621);
+            this.Controls.Add(this.checkBox_ChangePrice);
             this.Controls.Add(this.chart_PersonalGain);
             this.Controls.Add(this.chart_Fleet);
             this.Controls.Add(this.chart_Capital);
@@ -583,6 +595,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_Fleet;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_PersonalGain;
+        private System.Windows.Forms.CheckBox checkBox_ChangePrice;
     }
 }
 

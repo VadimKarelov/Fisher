@@ -43,6 +43,11 @@ namespace Fisher
             prevFish = Resource;
             Resource = (long)(Resource * KReproduction);
 
+            if (Resource < 0)
+            {
+                Resource = long.MaxValue;
+            }
+
             long production = (long)(ShipProduction * Fleet * GetEfficiency(Resource) * kProduction);
 
             if (production >= Resource || Resource - production < 10)
