@@ -8,14 +8,14 @@ namespace Fisher
 {
     class Fishing
     {
-        public int Resource { get; private set; }
+        public long Resource { get; private set; }
         public double Capital { get; private set; }
         public double Income { get; private set; }
         public double Consumption { get; private set; }
         public double PersonalGain { get; private set; }
 
-        public int Fleet { get; private set; } = 1;
-        public int Crew { get; private set; }
+        public long Fleet { get; private set; } = 1;
+        public long Crew { get; private set; }
 
         public double KInvestment { get; set; } = 0.2;
         public double KSaving { get; set; } = 0.2;
@@ -26,12 +26,12 @@ namespace Fisher
         public double ShipLife { get; set; }
         public double ShipProduction { get; set; }
         public double Salary { get; set; }
-        public int CrewNumber { get; set; } = 30;
+        public long CrewNumber { get; set; } = 30;
 
-        private int prevFish;
+        private long prevFish;
         private double kProduction = 1;
 
-        public Fishing(int initResource, double initCapital)
+        public Fishing(long initResource, double initCapital)
         {
             Resource = initResource;
             Capital = initCapital;
@@ -41,9 +41,9 @@ namespace Fisher
         public void Update(bool regulation)
         {
             prevFish = Resource;
-            Resource = (int)(Resource * KReproduction);
+            Resource = (long)(Resource * KReproduction);
 
-            int production = (int)(ShipProduction * Fleet * GetEfficiency(Resource) * kProduction);
+            long production = (long)(ShipProduction * Fleet * GetEfficiency(Resource) * kProduction);
 
             if (production >= Resource || Resource - production < 10)
                 production = 0;
@@ -64,7 +64,7 @@ namespace Fisher
             // если с рыбой все хорошо
             if (Resource > prevFish)
             {
-                if (Capital < ShipPrice * 2 && Capital - Consumption > 0)
+                if (Capital < ShipPrice * 2 && Capital - Consumption < 0)
                 {
                     // накопление
                     KInvestment = 0;
@@ -89,7 +89,7 @@ namespace Fisher
             }
         }
 
-        private double GetEfficiency(int resource)
+        private double GetEfficiency(long resource)
         {
             if (resource > 1000)
                 return 1;
@@ -97,7 +97,7 @@ namespace Fisher
                 return Math.Sqrt(resource / 1000.0);
         }
 
-        private void CountIncome(int production)
+        private void CountIncome(long production)
         {
             Income = production * MarketPrice;
             Capital += Income;
@@ -122,9 +122,9 @@ namespace Fisher
                 toPersonal = (Income - Consumption) * (1 - KInvestment - KSaving);
 
             if (Capital > 0)
-                toShips = (int)(Math.Truncate(Capital * KInvestment / ShipPrice) * ShipPrice);
+                toShips = (long)(Math.Truncate(Capital * KInvestment / ShipPrice) * ShipPrice);
 
-            BuyShips((int)(toShips / ShipPrice));
+            BuyShips((long)(toShips / ShipPrice));
 
             Capital = Capital - toPersonal - toShips;
             PersonalGain += toPersonal;
@@ -135,7 +135,7 @@ namespace Fisher
             Crew = Fleet * CrewNumber;
         }
 
-        private void BuyShips(int count)
+        private void BuyShips(long count)
         {
             Fleet += count;
         }
